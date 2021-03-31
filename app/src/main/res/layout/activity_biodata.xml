@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".Biodata">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:text="Biodata"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_people"
+        android:layout_toEndOf="@id/bio"/>
+
+    <LinearLayout
+        android:id="@+id/bio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Nama                              : Anugrah Lestari"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Tempat Tanggal Lahir  : Pinrang 27 Januari 2001"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Asal sekolah                  : SMAN 13 Jakarta"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bio"
+        android:layout_margin="15dp">
+
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:background="#0D0806"
+            android:onClick="backToHome"
+            android:src="@drawable/ic_back"/>
+
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="#0D0806"
+            android:onClick="logout"
+            android:src="@drawable/ic_logout"/>
+    </RelativeLayout>
+
+</RelativeLayout>
